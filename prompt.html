@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prompt Forge – NeonGrid</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-MdLcHh3DwcYtGJVzq4jQ+gNCRyqE+3Ioyv2j4cPRZDSdpvmn3E0EYf4pfkpiwvgxNK0jw3GD4Rs4cV69A76wXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header>
+    <h1>Prompt Forge</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="game.html">ByteDash</a>
+      <a href="virus.html">Virus Blaster</a>
+      <a href="prompt.html" class="active">Prompt Forge</a>
+      <a href="hardware.html">Time Warp</a>
+      <a href="shooter.html">Shooter</a>
+      <a href="facts.html">Facts</a>
+      <a href="map.html">Map</a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <h2>Prompt Forge</h2>
+      <p>Select the best prompt to get the most helpful answer from an AI. Learn why specificity matters and avoid hallucinations. Can you forge the perfect prompt?</p>
+      <button class="button" id="startPromptGame">Start Game</button>
+    </section>
+    <div class="game-container" id="prompt-container" style="display:none;">
+      <h3 id="prompt-question">Question</h3>
+      <div id="prompt-options">
+        <!-- Options will be inserted here -->
+      </div>
+      <div class="game-info">
+        <span id="prompt-score">Score: 0</span>
+        <span id="prompt-index" style="margin-left:20px;">Question 1</span>
+      </div>
+    </div>
+    <div class="status-panel" id="prompt-status-panel">
+      <h4>ByteZero Says</h4>
+      <p id="prompt-status">Click Start to begin forging better prompts.</p>
+    </div>
+  </main>
+  <footer style="text-align:center; padding:20px; color:#6c7bd9;">
+    &copy; 2026 Chilled IT Hub. Master the art of prompts.
+  </footer>
+  <script src="js/prompt.js"></script>
+</body>
+</html>

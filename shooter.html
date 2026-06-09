@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shooter Game – NeonGrid</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-MdLcHh3DwcYtGJVzq4jQ+gNCRyqE+3Ioyv2j4cPRZDSdpvmn3E0EYf4pfkpiwvgxNK0jw3GD4Rs4cV69A76wXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header>
+    <h1>Threat Zone Shooter</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="game.html">ByteDash</a>
+      <a href="virus.html">Virus Blaster</a>
+      <a href="prompt.html">Prompt Forge</a>
+      <a href="hardware.html">Time Warp</a>
+      <a href="shooter.html" class="active">Shooter</a>
+      <a href="facts.html">Facts</a>
+      <a href="map.html">Map</a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <h2>Threat Zone Shooter</h2>
+      <p>Move the defender at the bottom and shoot down viruses before they breach the system. Use the left and right arrow keys to move and press space to fire.</p>
+      <button class="button" id="startShooterGame">Start Game</button>
+    </section>
+    <div class="shooter-container" id="shooter-container">
+      <!-- Player, bullets and enemies will be created here via JS -->
+    </div>
+    <div class="status-panel">
+      <h4>Game Info</h4>
+      <p id="shooter-score">Score: 0</p>
+      <p id="shooter-lives">Lives: 3</p>
+    </div>
+  </main>
+  <footer style="text-align:center; padding:20px; color:#6c7bd9;">
+    &copy; 2026 Chilled IT Hub. Defend the network in style!
+  </footer>
+  <script src="js/shooter.js"></script>
+</body>
+</html>

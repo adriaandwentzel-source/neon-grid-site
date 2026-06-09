@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NeonGrid Facts Hub</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-MdLcHh3DwcYtGJVzq4jQ+gNCRyqE+3Ioyv2j4cPRZDSdpvmn3E0EYf4pfkpiwvgxNK0jw3GD4Rs4cV69A76wXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script defer src="js/facts.js"></script>
+</head>
+<body>
+  <header>
+    <h1>NeonGrid Facts Hub</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="game.html">ByteDash</a>
+      <a href="virus.html">Virus Blaster</a>
+      <a href="prompt.html">Prompt Forge</a>
+      <a href="hardware.html">Time Warp</a>
+      <a href="shooter.html">Shooter</a>
+      <a href="facts.html" class="active">Facts</a>
+      <a href="map.html">Map</a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <h2>Explore IT, AI & Security Facts</h2>
+      <p>Select a category below to discover a mix of foundational knowledge and astonishing stories. ByteZero will be your guide.</p>
+    </section>
+    <div class="dropdown-container">
+      <label for="categorySelect">Choose a fact category:</label>
+      <select id="categorySelect">
+        <option value="itLearning">Learn IT Facts</option>
+        <option value="itCrazy">Crazy IT Facts</option>
+        <option value="aiLearning">Learn AI Facts</option>
+        <option value="aiCrazy">Crazy AI Stories</option>
+        <option value="cyberLearning">Learn Cybersecurity Facts</option>
+        <option value="cyberIncidents">Famous Cyber Incidents</option>
+      </select>
+      <button class="button" id="newFactBtn">Show Fact</button>
+    </div>
+    <div class="facts-container" id="factsContainer">
+      <!-- Facts will be inserted here by JS -->
+    </div>
+    <div class="status-panel" id="factStatusPanel">
+      <h4>ByteZero Comments</h4>
+      <p id="factStatus">Select a category to begin.</p>
+    </div>
+  </main>
+  <footer style="text-align:center; padding:20px; color:#6c7bd9;">
+    &copy; 2026 Chilled IT Hub. Keep exploring the unknown.
+  </footer>
+</body>
+</html>

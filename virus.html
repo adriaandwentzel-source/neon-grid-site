@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virus Blaster – NeonGrid</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1 class="logo">Chilled IT Hub: <span class="highlight">NeonGrid</span></h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="game.html">ByteDash</a>
+            <a href="virus.html" class="active">Virus Blaster</a>
+            <a href="prompt.html">Prompt Forge</a>
+            <a href="hardware.html">Time Warp</a>
+            <a href="shooter.html">Shooter</a>
+            <a href="facts.html">Facts</a>
+            <a href="map.html">Map</a>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h2>Virus Blaster</h2>
+            <p>Stop the malware invasion! Click on viruses before they infect the system.</p>
+            <button id="startVirusGame" class="btn-primary">Start Game</button>
+        </section>
+        <section class="game-container" id="virus-game-container">
+            <!-- viruses will be spawned here -->
+        </section>
+        <section class="status-panel" id="virus-status-panel">
+            <h3>Score: <span id="virus-score">0</span></h3>
+            <h3>Time Left: <span id="virus-time">30</span>s</h3>
+            <p id="virus-bytezero">ByteZero: Ready to blast some malware? Keep clicking!</p>
+        </section>
+    </main>
+    <script src="js/virus.js"></script>
+</body>
+</html>

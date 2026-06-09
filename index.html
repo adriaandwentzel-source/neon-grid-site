@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chilled IT Hub: NeonGrid</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Include FontAwesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-MdLcHh3DwcYtGJVzq4jQ+gNCRyqE+3Ioyv2j4cPRZDSdpvmn3E0EYf4pfkpiwvgxNK0jw3GD4Rs4cV69A76wXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script defer src="js/main.js"></script>
+  <script defer src="js/facts.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Chilled IT Hub: NeonGrid</h1>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="game.html">ByteDash</a>
+      <a href="virus.html">Virus Blaster</a>
+      <a href="prompt.html">Prompt Forge</a>
+      <a href="hardware.html">Time Warp</a>
+      <a href="shooter.html">Shooter</a>
+      <a href="facts.html">Facts</a>
+      <a href="map.html">Map</a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <h2>Welcome to the NeonGrid</h2>
+      <p>Enter a cyber‑punk training ground where you learn IT by fixing chaos, dodging bad packets, blasting malware and forging better AI prompts – all guided by your trusty AI companion, <strong>ByteZero</strong>.</p>
+      <button class="button" onclick="location.href='game.html'">Start a Mission</button>
+      <button class="button" onclick="location.href='facts.html'">Explore Facts</button>
+    </section>
+
+    <!-- Daily Byte Section: shows a random fact each day -->
+    <div class="daily-byte" id="dailyByte" style="display:none;">
+      <h4>Daily Byte</h4>
+      <p id="dailyByteText">Loading daily knowledge…</p>
+    </div>
+    <section class="cards">
+      <div class="card">
+        <h3><i class="fa-solid fa-network-wired"></i> Networking</h3>
+        <p>Learn how data moves through networks by routing packets, fixing gateways and assigning VLANs. Start with Easy missions and climb to Hard mode.</p>
+      </div>
+      <div class="card">
+        <h3><i class="fa-solid fa-shield-halved"></i> Cybersecurity</h3>
+        <p>Defend the NeonGrid against phishing, malware and cyber attacks. Recognise threats and implement best practices with the help of ByteZero.</p>
+      </div>
+      <div class="card">
+        <h3><i class="fa-solid fa-robot"></i> Artificial Intelligence</h3>
+        <p>Discover how AI works, write better prompts and recognise hallucinations. Learn to use AI safely and responsibly in IT scenarios.</p>
+      </div>
+      <div class="card">
+        <h3><i class="fa-solid fa-clock"></i> Tech History</h3>
+        <p>Take a trip through the Time Warp Lab – compare old tech to new, uncover crazy facts and discover how far IT has come.</p>
+      </div>
+    </section>
+    <div class="status-panel" id="statusPanel">
+      <h4>ByteZero Status</h4>
+      <p id="statusMessage">Initialising…</p>
+      <p id="statusHint"></p>
+    </div>
+  </main>
+  <footer style="text-align:center; padding:20px; color:#6c7bd9;">
+    &copy; 2026 Chilled IT Hub. Inspired by the NeonGrid vision.
+  </footer>
+</body>
+</html>

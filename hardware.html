@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Time Warp – NeonGrid</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-MdLcHh3DwcYtGJVzq4jQ+gNCRyqE+3Ioyv2j4cPRZDSdpvmn3E0EYf4pfkpiwvgxNK0jw3GD4Rs4cV69A76wXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header>
+    <h1>Time Warp Lab</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="game.html">ByteDash</a>
+      <a href="virus.html">Virus Blaster</a>
+      <a href="prompt.html">Prompt Forge</a>
+      <a href="hardware.html" class="active">Time Warp</a>
+      <a href="shooter.html">Shooter</a>
+      <a href="facts.html">Facts</a>
+      <a href="map.html">Map</a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <h2>Hardware Time Warp</h2>
+      <p>Test your knowledge of old and new tech. Which device is newer, faster, larger or more modern? Learn just how far technology has come.</p>
+      <button class="button" id="startHardwareGame">Start Game</button>
+    </section>
+    <div class="game-container" id="hardware-container" style="display:none;">
+      <h3 id="hardware-question">Question</h3>
+      <div id="hardware-options">
+        <!-- Options inserted here -->
+      </div>
+      <div class="game-info">
+        <span id="hardware-score">Score: 0</span>
+        <span id="hardware-index" style="margin-left:20px;">Question 1</span>
+      </div>
+    </div>
+    <div class="status-panel" id="hardware-status-panel">
+      <h4>ByteZero Says</h4>
+      <p id="hardware-status">Click Start to begin the Time Warp challenge.</p>
+    </div>
+  </main>
+  <footer style="text-align:center; padding:20px; color:#6c7bd9;">
+    &copy; 2026 Chilled IT Hub. Travel through time and technology.
+  </footer>
+  <script src="js/hardware.js"></script>
+</body>
+</html>

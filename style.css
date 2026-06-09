@@ -1,0 +1,377 @@
+/*
+  Chilled IT Hub: NeonGrid
+  Global styles for a dark, cyber‑punk look with neon accents.
+  Feel free to tweak the colours to suit your tastes.
+*/
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0e0f1a;
+  color: #f5f5f5;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #0f1532;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: #39c0ed;
+  text-shadow: 0 0 8px rgba(57, 192, 237, 0.7);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 10px;
+}
+
+nav a {
+  color: #39c0ed;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: #51d1f6;
+  text-shadow: 0 0 5px #51d1f6;
+}
+
+/* Styles for active navigation links */
+nav a.active {
+  text-decoration: underline;
+  color: #51d1f6;
+}
+
+main {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.hero h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #a5c7ff;
+}
+
+.hero p {
+  max-width: 800px;
+  margin: auto;
+  color: #c8d5ff;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #39c0ed;
+  color: #0e0f1a;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+.button:hover {
+  background-color: #51d1f6;
+  box-shadow: 0 0 10px #51d1f6;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Grid styles for NeonGrid map */
+.map-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  margin: 40px auto;
+  max-width: 800px;
+}
+
+.map-tile {
+  background-color: #161b33;
+  border: 2px solid #39c0ed;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(57, 192, 237, 0.3);
+  transition: transform 0.2s, box-shadow 0.2s;
+  color: #c8d5ff;
+  text-decoration: none;
+}
+
+.map-tile:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 30px rgba(81, 209, 246, 0.6);
+}
+
+.map-tile h3 {
+  margin: 0 0 10px;
+  color: #51d1f6;
+}
+
+/* Styles for Daily Byte section */
+.daily-byte {
+  background-color: #161b33;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(57, 192, 237, 0.3);
+  color: #c8d5ff;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.daily-byte h4 {
+  margin-top: 0;
+  color: #51d1f6;
+}
+
+/* Modal overlay for game end */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(14, 15, 26, 0.95);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f5f5f5;
+  z-index: 1000;
+  padding: 20px;
+  text-align: center;
+}
+
+.modal-content {
+  background-color: #0f1532;
+  border: 2px solid #39c0ed;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(57, 192, 237, 0.4);
+  max-width: 500px;
+}
+
+.modal-content h3 {
+  margin-top: 0;
+  color: #51d1f6;
+}
+
+.modal-content p {
+  color: #c8d5ff;
+  margin: 10px 0;
+}
+
+.modal-content button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #39c0ed;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #0e0f1a;
+  transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+.modal-content button:hover {
+  background-color: #51d1f6;
+  box-shadow: 0 0 10px #51d1f6;
+}
+
+/* Shooter game styles */
+.shooter-container {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  margin: 20px auto;
+  background-color: #0f1532;
+  border: 2px solid #39c0ed;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(57, 192, 237, 0.4);
+  overflow: hidden;
+}
+
+.shooter-player {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  bottom: 10px;
+  left: 280px;
+  background-color: #39c0ed;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #39c0ed;
+}
+
+.bullet {
+  position: absolute;
+  width: 5px;
+  height: 10px;
+  background-color: #f5f5f5;
+  box-shadow: 0 0 5px #f5f5f5;
+}
+
+.enemy {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: #ff4d4d;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #ff4d4d;
+}
+
+.card {
+  background-color: #161b33;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  box-shadow: 0 0 20px rgba(57, 192, 237, 0.3);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 30px rgba(81, 209, 246, 0.6);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #51d1f6;
+}
+
+.card p {
+  color: #c8d5ff;
+  font-size: 0.9rem;
+}
+
+.status-panel {
+  background-color: #161b33;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 20px;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 15px rgba(57, 192, 237, 0.3);
+}
+
+.status-panel h4 {
+  margin: 0 0 5px;
+  color: #51d1f6;
+}
+
+.status-panel p {
+  margin: 2px 0;
+  font-size: 0.85rem;
+  color: #b0c7f0;
+}
+
+/* Canvas styles for the game */
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+/* Virus game container */
+#virus-game-container {
+  position: relative;
+  width: 600px;
+  height: 300px;
+  margin: 20px auto;
+  background-color: #0f1532;
+  border: 2px solid #39c0ed;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(57, 192, 237, 0.4);
+  overflow: hidden;
+}
+
+/* Virus element styling */
+.virus {
+  position: absolute;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+}
+.virus:hover {
+  transform: scale(1.1);
+}
+
+canvas {
+  background-color: #0f1532;
+  border: 2px solid #39c0ed;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(57, 192, 237, 0.4);
+}
+
+.game-info {
+  margin-top: 10px;
+  color: #c8d5ff;
+  font-size: 0.9rem;
+}
+
+.facts-container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.facts-container h2 {
+  text-align: center;
+  color: #51d1f6;
+}
+
+.fact {
+  background-color: #161b33;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(57, 192, 237, 0.2);
+}
+
+.fact h4 {
+  margin: 0 0 5px;
+  color: #51d1f6;
+}
+
+.fact p {
+  margin: 2px 0;
+  color: #b0c7f0;
+}
+
+.dropdown-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.dropdown-container select {
+  background-color: #161b33;
+  color: #c8d5ff;
+  border: 2px solid #39c0ed;
+  padding: 8px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}

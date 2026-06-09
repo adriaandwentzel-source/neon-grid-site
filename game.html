@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NeonGrid Games</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-MdLcHh3DwcYtGJVzq4jQ+gNCRyqE+3Ioyv2j4cPRZDSdpvmn3E0EYf4pfkpiwvgxNK0jw3GD4Rs4cV69A76wXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script defer src="js/game.js"></script>
+</head>
+<body>
+  <header>
+    <h1>NeonGrid Games</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="game.html" class="active">ByteDash</a>
+      <a href="virus.html">Virus Blaster</a>
+      <a href="prompt.html">Prompt Forge</a>
+      <a href="hardware.html">Time Warp</a>
+      <a href="shooter.html">Shooter</a>
+      <a href="facts.html">Facts</a>
+      <a href="map.html">Map</a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <h2>ByteDash: Packet Run</h2>
+      <p>Dodge obstacles and deliver your packet safely through the network. Use the arrow keys to move up and down. The longer you survive, the higher your score!</p>
+      <button class="button" id="startGameBtn">Start Game</button>
+    </section>
+    <div class="game-container">
+      <canvas id="gameCanvas" width="600" height="300"></canvas>
+      <div class="game-info">
+        <span id="scoreDisplay">Score: 0</span>
+        <span id="livesDisplay" style="margin-left:20px;">Lives: 3</span>
+      </div>
+    </div>
+    <div class="status-panel" id="gameStatusPanel">
+      <h4>ByteZero Guidance</h4>
+      <p id="gameStatus">Click the Start button to begin your packet run.</p>
+    </div>
+  </main>
+  <footer style="text-align:center; padding:20px; color:#6c7bd9;">
+    &copy; 2026 Chilled IT Hub. Stay sharp in the NeonGrid!
+  </footer>
+</body>
+</html>
